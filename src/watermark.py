@@ -32,7 +32,7 @@ while(True):
                 w_offset = frame_w - watermark_w - offset
                 overlay[h_offset + i, w_offset+ j] = watermark[i,j]
 
-    cv2.addWeighted(overlay, 0.25, frame, 1.0, 0, frame)
+    cv2.addWeighted(overlay, 0.5, frame, 1.0, 0, frame)
 
     frame = cv2.cvtColor(frame, cv2.COLOR_BGRA2BGR)
     out.write(frame)

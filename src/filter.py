@@ -98,8 +98,8 @@ while(True):
     #cv2.imshow('frame',frame)
 
 
-    hue_sat = apply_hue_saturation(frame.copy(), alpha=3, beta=3)
-    cv2.imshow('hue_sat', hue_sat)
+    # hue_sat = apply_hue_saturation(frame.copy(), alpha=3, beta=3)
+    # cv2.imshow('hue_sat', hue_sat)
     
     sepia = apply_sepia(frame.copy(), intensity=.8)
     cv2.imshow('sepia',sepia)
@@ -110,8 +110,8 @@ while(True):
     invert = apply_invert(frame.copy())
     cv2.imshow('invert', invert)
 
-    blur_mask = apply_circle_focus_blur(frame.copy())
-    cv2.imshow('blur_mask', blur_mask)
+    # blur_mask = apply_circle_focus_blur(frame.copy())
+    # cv2.imshow('blur_mask', blur_mask)
 
     portrait = portrait_mode(frame.copy())
     cv2.imshow('portrait',portrait)
